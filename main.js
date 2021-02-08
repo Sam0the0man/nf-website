@@ -56,15 +56,15 @@ let videoURL = {
     'Nate': 'LmHmawgCAHg'
 };
 
-let video = embed + videoURL[choose(videoNames)] + autoplay;
+let video = embed + videoURL[choose(videoNames)];
 
 let videoContainer = document.getElementById('video-container');
 
 let iframe = document.createElement('iframe');
 iframe.src = video;
 iframe.frameborder = 0;
-iframe.setAttribute('allowFullScreen', '')
-
+iframe.setAttribute('allowFullScreen', '');
+iframe.setAttribute('allow', 'autoplay; encrypted-media');
 videoContainer.appendChild(iframe);
 
 console.log(video);
