@@ -56,7 +56,7 @@ let videoURL = {
     'Nate': 'LmHmawgCAHg'
 };
 
-let video = embed + videoURL[choose(videoNames)] + autoplay;
+let video = embed + videoURL[choose(videoNames)];
 
 let videoContainer = document.getElementById('video-container');
 
